@@ -44,6 +44,7 @@ console.log(a4.isFull);
 
 //Part 8
 let p3 = new Tenant('Justin', 'Samuels', 'male', 'May 8, 1945');
+let p4 = new Tenant('Jason', 'Sims', 'male', 'May 8, 1245');
 
 console.log(a4.moveIn(p3));
 console.log(a4.tenants.length);
@@ -63,8 +64,17 @@ console.log(b1.floor(1)[1].price);
 console.log(b1.floor(2)[0].price);
 
 console.log('Collective rent is: ' + b1.collectRents());
-
+console.log('This apartment is full: ' + a2.isFull);
+console.log(a1.moveIn(p4));
+a2.moveIn(p1);
+a2.moveIn(p4);
+a3.moveIn(p1);
+a3.moveIn(p3);
+console.log('This apartment is full: ' + a3.isFull);
 console.log('We have vacancies: ' + b1.hasVacancies);
+
+
+
 
 
 
